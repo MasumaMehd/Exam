@@ -48,15 +48,19 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 100px 0;
 }
 
-
+.about_text {
+    padding: 0 16px;
+}
 
 .about_img {
     min-height: 370px;
 }
 
 .about_text .button_about {
+    margin-bottom: 24px;
     padding: 8px 16px;
     background: #F7F1FF;
     border: none;
@@ -68,7 +72,7 @@ header {
     color: #722ED1;
 }
 
-.about_text .button_about a{
+.about_text .button_about a {
     padding: 0 2px;
     text-decoration: underline;
     color: #722ED1;
@@ -77,3 +81,54 @@ header {
 .about_text button img {
     padding: 0 12px;
 }
+
+.about_text h2 {
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.about_text p {
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.about_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start_free_t {
+    margin-right: 16px;
+    padding: 12px 24px;
+    background-color: #722ED1;
+    border: none;
+    border-radius: 23px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.learn_more{
+    padding: 12px 24px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 23px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #722ED1;
+}
+
