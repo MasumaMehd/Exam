@@ -1,9 +1,15 @@
+@font-face {
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-Medium.otf") format("opentype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Metropolis";
 }
 
 header {
@@ -16,6 +22,7 @@ header {
 .free_trial {
     padding: 12px 24px;
     background-color: #fff;
+    font-weight: 500;
     color: #722ED1;
     border: 0.5px solid #722ED1;
     border-radius: 23px;
@@ -36,7 +43,6 @@ header {
 }
 
 .nav li a {
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
@@ -66,7 +72,6 @@ header {
     border: none;
     border-radius: 20px;
 
-    font-style: normal;
     font-size: 16px;
     line-height: 24px;
     color: #722ED1;
@@ -84,7 +89,6 @@ header {
 
 .about_text h2 {
     margin-bottom: 24px;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
@@ -93,7 +97,6 @@ header {
 
 .about_text p {
     margin-bottom: 24px;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -113,22 +116,162 @@ header {
     background-color: #722ED1;
     border: none;
     border-radius: 23px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
 }
 
-.learn_more{
+.learn_more {
     padding: 12px 24px;
     background-color: #FFFFFF;
     border: none;
     border-radius: 23px;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     color: #722ED1;
 }
 
+.Qubly {
+    display: flex;
+    flex-direction: column;
+}
+
+.why_qubly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: first baseline;
+
+    margin: 0 auto;
+    padding: 8px 16px;
+    width: 15%;
+    min-height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #F7F1FF;
+}
+
+.why_qubly img {
+    padding: 0;
+}
+
+.why_qubly p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #722ED1;
+}
+
+.qubly_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.qubly_text h3 {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #160637;
+}
+
+.qubly_text p {
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8989A2;
+}
+
+.cards_3 {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card h4 {
+    padding: 16px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #160637;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8989A2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .about_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about_text h2 {
+        text-align: center;
+    }
+
+    .about_text p {
+        text-align: center;
+    }
+
+    .about_img {
+        margin-top: 20px;
+    }
+
+    .cards_3{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card{
+        padding: 10px 0;
+    }
+
+    .card p{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .about_text p{
+        font-size: 14px;
+    }
+}
