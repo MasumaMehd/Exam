@@ -68,6 +68,7 @@ header {
 .about_text .button_about {
     margin-bottom: 24px;
     padding: 8px 16px;
+    width: fit-content;
     background: #F7F1FF;
     border: none;
     border-radius: 20px;
@@ -77,8 +78,12 @@ header {
     color: #722ED1;
 }
 
+.about_text .button_about span {
+    padding: 0 5px 0 12px;
+}
+
 .about_text .button_about a {
-    padding: 0 2px;
+    padding: 0;
     text-decoration: underline;
     color: #722ED1;
 }
@@ -141,11 +146,11 @@ header {
 .why_qubly {
     display: flex;
     justify-content: space-evenly;
-    align-items: first baseline;
+    align-items: center;
 
     margin: 0 auto;
     padding: 8px 16px;
-    width: 15%;
+    width: 158px;
     min-height: 40px;
     border: none;
     border-radius: 20px;
@@ -156,7 +161,7 @@ header {
     padding: 0;
 }
 
-.why_qubly p {
+.why_qubly span {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -220,6 +225,39 @@ header {
     color: #8989A2;
 }
 
+.qubly_products {
+    margin: 0;
+    width: 224px;
+}
+
+.for_product_teams {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_text h3 {
+    padding: 24px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #160637;
+}
+
+.product_text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8989A2;
+}
+
 
 
 
@@ -254,24 +292,41 @@ header {
         margin-top: 20px;
     }
 
-    .cards_3{
+    .cards_3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .card{
+    .card {
         padding: 10px 0;
     }
 
-    .card p{
+    .card p {
         margin: 0 auto;
         width: 70%;
     }
+
+    .product_text .qubly_products {
+        margin: 0 auto;
+    }
+
+    .product_text h3,
+    p {
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 480px){
-    .about_text p{
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin: 0 auto;
+    }
+
+    .about_text p {
         font-size: 14px;
     }
 }
+
+@media only screen and (max-width: 360px) {}
