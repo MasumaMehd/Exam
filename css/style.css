@@ -39,7 +39,12 @@ header {
 }
 
 .navbar-toggle {
-    background-color: #000;
+    border: 0.5px solid #a498b4;
+    background-color: #F7F1FF;
+}
+
+.icon-bar {
+    background-color: #722ED1;
 }
 
 .nav li a {
@@ -273,6 +278,13 @@ header {
 
 
 @media only screen and (max-width: 768px) {
+    .navbar-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .about_text {
         display: flex;
         justify-content: center;
@@ -324,7 +336,34 @@ header {
         margin: 0 auto;
     }
 
+    .about_text h2 {
+        font-size: 32px;
+    }
+
     .about_text p {
+        width: 80%;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .about_img img {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .qubly_text{
+        padding: 0 15px;
+    }
+
+    .qubly_text, .product_text h3 {
+        font-size: 24px;
+    }
+
+    .qubly_text, .product_text p {
+        font-size: 14px;
+    }
+
+    .card p {
         font-size: 14px;
     }
 }
