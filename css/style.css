@@ -9,7 +9,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-family: "Metropolis";
+    font-family: "Metropolis", sans-serif;
 }
 
 header {
@@ -29,13 +29,15 @@ header {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
     padding: 20px 0;
 }
 
 .nav li {
     padding: 0 20px;
+}
+
+.nav li a:hover {
+    background-color: #EEDFF9;
 }
 
 .navbar-toggle {
@@ -182,7 +184,8 @@ header {
 }
 
 .qubly_text h3 {
-    margin-top: 24px;
+    margin: 0;
+    padding: 24px 0;
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -191,6 +194,7 @@ header {
 }
 
 .qubly_text p {
+    margin: 0;
     padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
@@ -263,6 +267,171 @@ header {
     color: #8989A2;
 }
 
+.blue_logo {
+    padding: 30px 0;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    left: 160px;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 10;
+}
+
+.blue_logo img {
+    position: absolute;
+    top: -10px;
+    left: -12px;
+}
+
+.circle_1 {
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border-radius: 50%;
+    border: 1px solid #EEDFF9;
+}
+
+.delphi {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/delphi.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: -114px;
+    right: -80px;
+}
+
+.circle_2 {
+    width: 305px;
+    height: 305px;
+    top: -101px;
+    left: -96px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #EEDFF9;
+}
+
+.servers {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/servers.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -142px;
+}
+
+.circle_3 {
+    width: 400px;
+    height: 400px;
+    top: -147px;
+    left: -143px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #EEDFF9;
+}
+
+.search {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    right: -82px;
+}
+
+.sqlite {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/sqlite.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 85px;
+    right: 145px;
+}
+
+.snowflake {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/snowflake.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: -187px;
+    right: 25px;
+}
+
+.hexagon {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/hexa.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    right: 182px;
+}
+
+.amazon {
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/amazon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 192px;
+    right: 62px;
+}
+
+.animation {
+    animation-name: products;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+@keyframes products {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes logo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 
@@ -276,13 +445,21 @@ header {
 
 
 
+
+
+@media only screen and (max-width: 992px) {}
 
 @media only screen and (max-width: 768px) {
-    .navbar-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    .nav {
+        padding: 20px 0;
+    }
+
+    .nav li {
+        padding: 10px 10px;
+    }
+
+    .nav li:last-child {
+        border: none;
     }
 
     .about_text {
@@ -327,6 +504,10 @@ header {
     p {
         text-align: center;
     }
+
+    .blue_logo {
+        display: none;
+    }
 }
 
 
@@ -334,6 +515,10 @@ header {
 @media only screen and (max-width: 480px) {
     body {
         margin: 0 auto;
+    }
+
+    .nav li {
+        border-bottom: 1px solid rgba(137, 137, 162, .5);
     }
 
     .about_text h2 {
@@ -351,15 +536,17 @@ header {
         min-height: 100px;
     }
 
-    .qubly_text{
+    .qubly_text {
         padding: 0 15px;
     }
 
-    .qubly_text, .product_text h3 {
+    .qubly_text,
+    .product_text h3 {
         font-size: 24px;
     }
 
-    .qubly_text, .product_text p {
+    .qubly_text,
+    .product_text p {
         font-size: 14px;
     }
 
