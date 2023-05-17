@@ -155,13 +155,16 @@ header {
     justify-content: space-evenly;
     align-items: center;
 
-    margin: 0 auto;
     padding: 8px 16px;
     width: 158px;
     min-height: 40px;
     border: none;
     border-radius: 20px;
     background-color: #F7F1FF;
+}
+
+.qubly_1 {
+    margin: 0 auto;
 }
 
 .why_qubly img {
@@ -204,6 +207,7 @@ header {
 }
 
 .cards_3 {
+    margin: 10px 0;
     padding: 24px 0;
     display: flex;
     justify-content: space-evenly;
@@ -232,6 +236,10 @@ header {
     line-height: 24px;
     text-align: center;
     color: #8989A2;
+}
+
+.alternative {
+    display: none;
 }
 
 .qubly_products {
@@ -409,6 +417,317 @@ header {
     animation-timing-function: linear;
 }
 
+.engineering {
+    padding: 120px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.engineering_1 {
+    width: 258px;
+    height: 40px;
+}
+
+.engineering_img img {
+    width: 100%;
+    min-height: 286px;
+}
+
+.partners {
+    background-image: url(../images/Path\ 606.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 125px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #DEC9FA;
+}
+
+.profile_text h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #160637;
+}
+
+.profile_text img {
+    padding: 32px 0;
+}
+
+.profile_text p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.partner_logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 32px 0;
+}
+
+.form {
+    min-height: 522px;
+    margin: 120px 0;
+    padding-bottom: 28px;
+}
+
+.form_left {
+    max-width: 431px;
+}
+
+.form_title {
+    margin-top: 47px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #160637;
+}
+
+.trust {
+    margin: 35px 0 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8989a2;
+    position: relative;
+    text-align: center;
+}
+
+.trust::before,
+.trust::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 144px;
+    height: 1px;
+    background-color: #d6d6d6;
+}
+
+.trust::before {
+    left: 0;
+}
+
+.trust::after {
+    right: 0;
+}
+
+.form_company {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+form {
+    padding: 32px 40px;
+    display: flex;
+    max-width: 428px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+    border-radius: 8px;
+    position: relative;
+}
+
+form:after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: #f9f0ff;
+    top: 0;
+    left: -5%;
+    z-index: -1;
+}
+
+.sign {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #160637;
+}
+
+.form_btn {
+    padding: 12px 99px;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background: #722ed1;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+form > input {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 16px;
+    width: 348px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #8989a2;
+}
+
+form > p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+
+::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #8989a2;
+}
+
+.line {
+    opacity: 0.48;
+    height: 1px;
+    background-color: #8989a2;
+    width: 100%;
+}
+
+.login {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8989a2;
+}
+
+.login a {
+    color: #722ED1;
+}
+
+.form_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 46px;
+}
+
+footer {
+    min-height: 400px;
+    background: #fbfcff;
+    padding: 58px 0 19px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 24px;
+}
+
+.logo_text {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    max-width: 209px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #160637;
+}
+
+.footer_social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #160637;
+}
+
+.footer_list {
+    list-style: none;
+}
+
+.footer_list li {
+    margin-bottom: 12px;
+}
+
+.footer_list li a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #160637;
+}
+
+.footer_send {
+    position: relative;
+}
+
+.footer_input {
+    background: #ffffff;
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.051));
+    padding: 12px 16px 16px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #8989a2;
+}
+
+.footer_send::after {
+    content: "";
+    position: absolute;
+    top: 47px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/send.svg") no-repeat;
+    cursor: pointer;
+}
+
+.footer_c {
+    margin-top: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #160637;
+}
+
+.footer_c p {
+    margin: 0;
+}
 
 
 
@@ -437,17 +756,37 @@ header {
 
 
 
+@media only screen and (max-width: 991px) {
+    .blue_logo {
+        display: none;
+    }
 
+    .product_text {
+        text-align: center;
+    }
 
+    .qubly_products {
+        margin: 0 auto;
+    }
 
+    .engineering_1{
+        margin: 0 auto;
+    }
 
+    .footer_content {
+        flex-wrap: wrap;
+    }
 
-
-
-
-
-
-@media only screen and (max-width: 992px) {}
+    .form_company {
+        max-width: unset;
+    }
+    .form_title {
+        text-align: center;
+    }
+    .form {
+        margin: 60px 0;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .nav {
@@ -496,21 +835,55 @@ header {
         width: 70%;
     }
 
+    .alternative {
+        display: block;
+    }
+
+    .for_product_teams{
+        padding: 20px 0;
+    }
+    
     .product_text .qubly_products {
         margin: 0 auto;
     }
 
-    .product_text h3,
-    p {
+    .product_text h3 {
         text-align: center;
     }
 
-    .blue_logo {
-        display: none;
+    .product_text p {
+        text-align: center;
+    }
+
+    .why_qubly {
+        margin: 0 auto;
+    }
+
+    .engineering {
+        margin: 0 10px;
+        padding: 0;
+    }
+
+    .partners{
+        padding: 20px;
+        background: linear-gradient(175.54deg, #F9F0FF 25.81%, #E2F1FF 96.38%);
+    }
+
+    .profile_text h4{
+        font-size: 20px;
+    }
+
+    .partner_logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partner_logos img{
+        padding: 10px 0;
     }
 }
-
-
 
 @media only screen and (max-width: 480px) {
     body {
@@ -553,6 +926,32 @@ header {
     .card p {
         font-size: 14px;
     }
-}
 
-@media only screen and (max-width: 360px) {}
+    .trust::before, .trust::after {
+        width: 100px;
+    }
+    form > input {
+        width: 302px;
+    }
+    form {
+        padding: 32px 20px;
+    }
+    form:after {
+        width: 100%;
+    }
+    .form_btn {
+        padding: 12px 82px;
+    }
+    .form_title, .sign {
+        font-size: 24px;
+    }
+    .form_btn, ::-webkit-input-placeholder, form > input {
+        font-size: 14px;
+    }
+    footer {
+        padding: 0px 0 19px;
+    }
+    .footer_content {
+        justify-content: flex-start;
+    }
+}
