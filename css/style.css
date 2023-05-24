@@ -10,6 +10,7 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-family: "Metropolis", sans-serif;
+    cursor: none;
 }
 
 header {
@@ -54,6 +55,21 @@ header {
     font-size: 14px;
     line-height: 14px;
     color: #000000;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: #0f3150;
+    box-shadow: 0 0 12px rgba(95, 78, 120, 0.5);
+    opacity: 0.7;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }
 
 .about {
@@ -221,6 +237,10 @@ header {
     flex-direction: column;
 }
 
+.card:hover {
+    animation: bounce 1s;
+}
+
 .card h4 {
     padding: 16px 0;
     font-weight: 700;
@@ -238,6 +258,13 @@ header {
     color: #8989A2;
 }
 
+.card img {
+    transition: transform 1s;
+}
+
+.card:hover img {
+    transform: rotate(360deg);
+}
 
 .qubly_products {
     margin: 0;
@@ -432,6 +459,10 @@ header {
     min-height: 286px;
 }
 
+.engineering_img:hover img {
+    animation: bounce 1s;
+}
+
 .partners {
     background-image: url(../images/Path\ 606.png);
     background-position: center;
@@ -465,6 +496,14 @@ header {
     padding: 32px 0;
 }
 
+.profile_text img {
+    transition: transform 1s;
+}
+
+.profile_text:hover img {
+    transform: rotate(360deg);
+}
+
 .profile_text p {
     font-weight: 700;
     font-size: 16px;
@@ -473,13 +512,36 @@ header {
     color: #000000;
 }
 
-.partner_logos{
+.partner_logos {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-
     padding: 32px 0;
+}
+
+.tonkean:hover {
+    filter: invert(72%) sepia(77%) saturate(1138%) hue-rotate(340deg) brightness(99%) contrast(105%);
+}
+
+.bigspring {
+    filter: grayscale(100%);
+}
+
+.bigspring:hover {
+    filter: invert(88%) sepia(21%) saturate(700%) hue-rotate(50deg) brightness(85%) contrast(97%);
+}
+
+.clearbit:hover {
+    filter: invert(82%) sepia(5%) saturate(4226%) hue-rotate(169deg) brightness(98%) contrast(91%);
+}
+
+.mine:hover {
+    filter: invert(46%) sepia(80%) saturate(350%) hue-rotate(349deg) brightness(100%) contrast(107%);
+}
+
+.shake:hover {
+    filter: invert(26%) sepia(70%) saturate(3249%) hue-rotate(327deg) brightness(93%) contrast(86%);
+    ;
 }
 
 .form {
@@ -581,7 +643,7 @@ form:after {
     color: #ffffff;
 }
 
-form > input {
+form>input {
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     padding: 16px;
@@ -592,7 +654,7 @@ form > input {
     color: #8989a2;
 }
 
-form > p {
+form>p {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
@@ -629,6 +691,10 @@ form > p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 46px;
+}
+
+.accenture:hover {
+    filter: invert(23%) sepia(21%) saturate(5421%) hue-rotate(299deg) brightness(94%) contrast(91%);
 }
 
 footer {
@@ -730,12 +796,12 @@ footer {
     opacity: 0;
     transform: translate(0, 10vh);
     transition: all 1s;
-  }
-  
-  .tag.visible {
+}
+
+.tag.visible {
     opacity: 1;
     transform: translate(0, 0);
-  }
+}
 
 
 @keyframes products {
@@ -757,6 +823,27 @@ footer {
         transform: rotate(360deg);
     }
 }
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.filterit {
+    width: 270px;
+    filter: invert(88%) sepia(21%) saturate(935%) hue-rotate(123deg) brightness(85%) contrast(97%);
+}
+
+
 
 
 
@@ -784,7 +871,7 @@ footer {
         margin: 0 auto;
     }
 
-    .engineering_1{
+    .engineering_1 {
         margin: 0 auto;
     }
 
@@ -795,9 +882,11 @@ footer {
     .form_company {
         max-width: unset;
     }
+
     .form_title {
         text-align: center;
     }
+
     .form {
         margin: 60px 0;
     }
@@ -851,10 +940,10 @@ footer {
     }
 
 
-    .for_product_teams{
+    .for_product_teams {
         padding: 20px 0;
     }
-    
+
     .product_text .qubly_products {
         margin: 0 auto;
     }
@@ -876,23 +965,23 @@ footer {
         padding: 0;
     }
 
-    .partners{
+    .partners {
         padding: 20px;
         background: linear-gradient(175.54deg, #F9F0FF 25.81%, #E2F1FF 96.38%);
     }
 
-    .profile_text h4{
+    .profile_text h4 {
         font-size: 20px;
     }
 
-    .partner_logos{
+    .partner_logos {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .partner_logos img{
+    .partner_logos img {
         padding: 10px 0;
     }
 }
@@ -941,30 +1030,42 @@ footer {
         font-size: 14px;
     }
 
-    .trust::before, .trust::after {
+    .trust::before,
+    .trust::after {
         width: 100px;
     }
-    form > input {
+
+    form>input {
         width: 302px;
     }
+
     form {
         padding: 32px 20px;
     }
+
     form:after {
         width: 100%;
     }
+
     .form_btn {
         padding: 12px 82px;
     }
-    .form_title, .sign {
+
+    .form_title,
+    .sign {
         font-size: 24px;
     }
-    .form_btn, ::-webkit-input-placeholder, form > input {
+
+    .form_btn,
+    ::-webkit-input-placeholder,
+    form>input {
         font-size: 14px;
     }
+
     footer {
         padding: 0px 0 19px;
     }
+
     .footer_content {
         justify-content: flex-start;
     }
