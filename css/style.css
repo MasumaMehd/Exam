@@ -938,9 +938,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-    .cursor {
-        display: none;
-    }
 
     body {
         cursor: unset;
